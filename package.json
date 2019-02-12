@@ -1,0 +1,31 @@
+{
+  "name": "gulp-my-impl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "dima-serve": "gulp default",
+    "dima-build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmytro Tarhan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gh-pages": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-server-livereload": "^1.9.2",
+    "node-sass": "^4.10.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "pug": "^2.0.3",
+    "sass": "^1.15.1"
+  },
+  "description": ""
+}
