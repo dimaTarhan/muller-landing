@@ -3,14 +3,13 @@
 @import "../components/information";
 @import "../components/slider";
 @import "../components/footer";
-@import "media-style";
 
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: $main-page-font;
 }
 
-.visible{
+.visible {
   display: flex;
 }

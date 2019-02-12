@@ -1,11 +1,11 @@
-footer{
+footer {
   width: 80%;
   height: 190px;
   margin: 0 auto;
   background-color: $main-page-color;
 }
 
-.footer-wrapper{
+.footer-wrapper {
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -15,20 +15,20 @@ footer{
   color: white;
 }
 
-.foo-nav{
+.foo-nav {
   display: flex;
   flex-direction: row;
 
-  a{
+  a {
     text-decoration: none;
     color: white;
     font-size: 24px;
 
-    &:last-child{
+    &:last-child {
       margin-left: 20px;
     }
 
-    &:hover{
+    &:hover {
       transition: 0.2s;
       opacity: 0.8;
       text-decoration: underline;
@@ -36,24 +36,101 @@ footer{
   }
 }
 
-.contacts{
+.contacts {
   margin-left: auto;
   display: flex;
   flex-direction: column;
 
-  .contacts-info{
+  .contacts-info {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-top: 20px;
       margin-bottom: 20px;
     }
   }
 
-  .material-icons{
+  .material-icons {
     font-size: 30px;
     margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1499px) and (min-width: 1280px) {
+  footer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  footer {
+    width: 90%;
+  }
+
+  .footer-wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  footer {
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    width: 90%;
+  }
+
+  .contacts .material-icons {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .foo-nav a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  footer {
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .contacts .material-icons {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .foo-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .contacts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .contacts-info:nth-child(2) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+  .contacts .contacts-info {
+    font-size: 12px;
   }
 }
